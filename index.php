@@ -10,6 +10,16 @@
 </head>
 
 <body class="bg-purple-900">
+<?php
+        session_start();
+        if(isset($_SESSION['username'])){
+
+        }else{
+            header('location: login.php');
+        }
+
+?>
+
 
     <div class="container mx-auto ">
         <!--  input area -->

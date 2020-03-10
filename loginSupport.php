@@ -12,7 +12,7 @@ if(isset($_POST['singin'])){
 
     if($userName === 'admin'){
         if($password === 'pass'){
-                //login success
+                
             $_SESSION['username'] = $userName;
             header('location: index.php');
 
@@ -26,7 +26,6 @@ if(isset($_POST['singin'])){
         header('location: login.php');
     }
 
-//    echo 'yes';
     
     
 
@@ -34,4 +33,3 @@ if(isset($_POST['singin'])){
 }
 
     
-?>

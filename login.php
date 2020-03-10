@@ -11,16 +11,13 @@
 
 <body class="bg-blue-600"> 
     <!-- session code section -->
-<?php 
-        session_start();
 
-        if(isset($_SESSION['username'])) 
-        
-?>
 
 <!-- logion warning section -->
 <p class="bg-red-700 text-center text-3xl antialiased uppercase text-gray-900">
+
                     <?php
+                    session_start();
                     if(isset($_SESSION['message'])){
                         
                         echo $_SESSION['message'];
@@ -29,7 +26,7 @@
                     ?>
 </p>
 
-
+                
 
 <div class="container mx-auto mt-10 flex justify-center ">
     <div class="w-full max-w-xs">
